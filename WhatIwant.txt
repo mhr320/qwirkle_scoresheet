@@ -1,0 +1,24 @@
+File Name:       WhatIwant.txt
+Written by:      Michael H. Roberts
+Creation Date:   Sun 08 Feb 2015 @ 14:02:20
+
+Command Line Only Version
+
+launch program
+ask the first player's initial
+ask for the second player's initial
+ask for third player's initial, if blank, move into scoring mode, if not blank
+ask for fourth player's initial.
+Scoring mode
+
+ask for player one's score
+  accept inputs as integers only
+  continue listening for inputs until blank line entered
+
+ask for player two's score
+  accept inputs as integers only
+  continue listening for inputs until blank line entered
+
+each "ask for player's score" shall be considered their "turn" and 
+a history of turns shall be created and displayed for each player if 
+certain key or key combo entered.
