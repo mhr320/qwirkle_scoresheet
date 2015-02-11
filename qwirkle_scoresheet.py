@@ -6,23 +6,34 @@
 # Time: 
 ################################################
 import sys
+from RobFuns import *
 
-print 'Player 1 > '
-p1 = raw_input()
-print 'Player 2 > '
-p2 = raw_input()
+i = 1
+s1 = []
+ss1 = []
+s2 = []
+ss2 = []
 
-def yes_or_no(question):
-	reply = str(raw_input(question+' (y/n): ')).lower().strip()
-	if reply[0] == 'y':
-		return True
-	if reply[0] == 'n':
-		return False
-	else:
-		return yes_or_no("Uhhhh... please enter ")
+player1 = str(raw_input("Please enter Player 1 >>> "))
+player2 = str(raw_input("Please enter Player 2 >>> "))
 
-def main():
-	yes_or_no("hrlp")
 
-if __name__ == '__main__':
-	main()
+yana("Do you wish to start the game")
+
+
+if yana:
+	yana("%s Ready" % player1)
+	if yana:
+		scorer(s1,ss1)
+
+p1 = sum(ss1)
+print "%s's score: %s \n" % (player1, p1)
+
+yana("%s Ready" % player2)
+
+if yana:
+  scorer(s2,ss2)
+
+p2 = sum(ss2)
+print "%s's score: %s" % (player2, p2)
+
