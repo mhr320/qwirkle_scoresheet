@@ -1,4 +1,4 @@
-def scorer(enteredScores,scoresAsInts):
+def scorer(enteredScores):
 	i = 1 
 	while 1:
 		i = str(raw_input("Enter Scores >>> "))
@@ -6,9 +6,20 @@ def scorer(enteredScores,scoresAsInts):
 		enteredScores.append(i)
 		for i in enteredScores:
 			print i
-	for i in enteredScores:
-		scoresAsInts.append(int(i))
-
+		
+#scoresAsInts = [int(x) for x in enteredScores]
+		
+		#for i in enteredScores:
+		#	scoresAsInts.append(int(i))
+		#scoresAsInts = map(int, enteredScores)	
+	
+	
+	
+	
+	
+	
+	
+	
 def yana(question):
 	reply = str(raw_input(question+' (y/n): ')).lower().strip()
 	if reply[0] == 'y':
